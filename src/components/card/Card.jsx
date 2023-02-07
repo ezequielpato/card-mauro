@@ -28,7 +28,7 @@ const Card = () => {
                             <div className='card-button' onClick={()=> setState(state+1)}><p>+</p></div>
                         </div>
                         <div>
-                            <p className='card-buttonadd'>Agregar</p>
+                            <p className='card-buttonadd' onClick={()=> alert(`Se agregaron ${state} cervezas al carrito`)}>Agregar</p>
                         </div>
                     </div>
                 </div>
