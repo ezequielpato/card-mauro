@@ -16,6 +16,7 @@ const Card = () => {
                         {/* <p>img</p> */}
                         <img src='https://pbs.twimg.com/media/DachyweUQAAreh9?format=jpg&name=4096x4096' width="260px" height="250px"></img>
                     </div>
+
                     <div className='card-body'>
                         <h3>Card Title</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, voluptatum.</p>
@@ -27,8 +28,8 @@ const Card = () => {
                             <p className='card-state'>{state}</p>
                             <div className='card-button' onClick={()=> setState(state+1)}><p>+</p></div>
                         </div>
-                        <div>
-                            <p className='card-buttonadd' onClick={()=> alert(`Se agregaron ${state} cervezas al carrito`)}>Agregar</p>
+                        <div className='card-buttonadd'>
+                            <p onClick={()=> alert(`Se agregaron ${state} cervezas al carrito`)}>Agregar</p>
                         </div>
                     </div>
                 </div>
