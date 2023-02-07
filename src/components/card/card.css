@@ -2,7 +2,7 @@
 
 :root {
   --color-border: rgba(0,0,0,0.35);
-  --color-bk: rgba(255, 255, 255, 0.6);
+  --color-bk: rgba(255, 255, 255, 0.89);
   --color-card-bk: rgba(255, 255, 255, 85);
   --color-card-bk-img: rgba(47,179,57,0.5);
   --color-card-body-p: rgba(0,0,0,0.6);
@@ -74,13 +74,27 @@ section {
   padding: 0.4rem auto 0.4rem auto;
 }
 
+
+
+
+/* ############ CARD FOOTER ############# */
+
 .card-footer {
   padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
 }
 
 .card-footer {
+  justify-content: space-between;
+}
+
+.card-buttons {
   display: flex;
   flex-direction: row;
+  width: 70%;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .card-footer p{
@@ -98,16 +112,13 @@ section {
   margin: 0;
   justify-content: center;
   align-items: center;
-
   cursor: pointer;
 }
 
-.card-button p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.card-state{
   color: black;
-  padding: 0;
-  margin: 0;
-  width: 50%;
+}
+
+.card-buttonadd {
+  font-size: 14px;
 }

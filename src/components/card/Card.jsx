@@ -20,10 +20,16 @@ const Card = () => {
                         <h3>Card Title</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, voluptatum.</p>
                     </div>
+
                     <div className='card-footer'>
-                        <div className='card-button' onClick={()=> {state > 0 && setState(state-1)}}><p>-</p></div>
-                            <p>{state}</p>
-                        <div className='card-button' onClick={()=> setState(state+1)}><p>+</p></div>
+                        <div className='card-buttons'>
+                            <div className='card-button' onClick={()=> {state > 0 && setState(state-1)}}><p>-</p></div>
+                            <p className='card-state'>{state}</p>
+                            <div className='card-button' onClick={()=> setState(state+1)}><p>+</p></div>
+                        </div>
+                        <div>
+                            <p className='card-buttonadd'>Agregar</p>
+                        </div>
                     </div>
                 </div>
             </div>
