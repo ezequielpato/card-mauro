@@ -11,7 +11,8 @@
 }
 
 *{
-  margin: auto
+  margin: auto;
+  text-rendering: optimizelegibility !important;
 }
 section {
   width: 90vw;
@@ -26,6 +27,7 @@ section {
 }
 
 .card-container {
+  transition: 100ms;
   width: 250px;
   height: auto;
   margin: auto;
@@ -40,6 +42,10 @@ section {
   -moz-box-shadow: 20px 16px 29px -12px rgba(0,0,0,0.22);
 }
 
+.card-container:hover {
+  transform: scale(1.03);
+}
+
 .card-img {
   display: flex;
   /* background-color: var(--color-card-bk-img); */
@@ -48,10 +54,11 @@ section {
   border-color: var(--color-border);
   border-width: 1px;
   border-style: solid;
+  overflow: hidden;
 }
 
-.card-img {
-  overflow: hidden;
+.card-img img {
+  transform: translateY(-10%);
 }
 
 .card-body {

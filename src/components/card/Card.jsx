@@ -14,18 +14,17 @@ const Card = () => {
                     {/* <h4>card</h4> */}
                     <div className='card-img'>
                         {/* <p>img</p> */}
-                        <img src='https://www.espaciovino.com.ar/media/default/0001/61/thumb_60729_default_medium.jpeg' width="250px" height="auto"></img>
+                        <img src='https://pbs.twimg.com/media/DachyweUQAAreh9?format=jpg&name=4096x4096' width="260px" height="250px"></img>
                     </div>
                     <div className='card-body'>
                         <h3>Card Title</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, voluptatum.</p>
                     </div>
                     <div className='card-footer'>
-                        <div className='card-button' onClick={()=> setState(state+1)}><p>+</p></div>
-                            <p>{state}</p>
                         <div className='card-button' onClick={()=> {state > 0 && setState(state-1)}}><p>-</p></div>
+                            <p>{state}</p>
+                        <div className='card-button' onClick={()=> setState(state+1)}><p>+</p></div>
                     </div>
-                    
                 </div>
             </div>
 
